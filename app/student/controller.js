@@ -12,6 +12,7 @@ mongoose
     console.error("Error connecting to the database", err);
   });
 
+// The Controller Method - lines 16 to 112 contains all the ROUTES
 const controller = {
   getStudents() {
     return Student.find();

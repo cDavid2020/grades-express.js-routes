@@ -18,6 +18,10 @@ router.get("/", (_, res) => {
 
 // Add a grade to the student (20 lines of code pasted from 'student-routes-branch')
 
+/*
+a route for updating a grade for a student using a PUT request to the "/grade/:id" endpoint, which is handled by the router.put method
+ */
+
 router.put("/grade/:id", async (req, res) => {
   const { id } = req.params;
   const updatedStudent = await studentController
